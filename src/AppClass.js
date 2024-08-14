@@ -75,6 +75,7 @@ export default class AppClass extends Component {
   }
 
   reset = () => {
+     console.log("리셋 버튼 클릭됨")
     this.setState( {
       userSelect: null,
       computerSelect: null,

@@ -29,3 +29,5 @@ export default class BoxClass extends Component {
     );
   }
 }
+
+
