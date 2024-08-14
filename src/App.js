@@ -81,7 +81,7 @@ function App() {
   return (
     <div>
     <div className="title-img">
-          <img className="rps-img" src="./img/color-rock-paper-scissors.png" />
+          <img className="rps-img" ait=" " src="./img/color-rock-paper-scissors.png" />
         </div>
       <div className="main" >
         <Box title="You" item={userSelect} result={result} />
@@ -90,9 +90,9 @@ function App() {
       <div className="main main2">
         {/* 3. 버튼을 클릭하면 클릭한 값이 박스에 보임, 무엇을 선택했는지 알게하는 매개변수를 {play()} 에다 넣어준다.  play 함수에다 (userChoice)라는 매개변수이름을 준다. */}
         {/* play("매개변수") 하면 함수를 그냥 실행시켜버린답니다. 그래서 콜백함수를 줘야한다. 어떻게?  { () => play("scissors") 이렇케 해준다.*/}
-        <button onClick={() => play("scissors")}><img className="rock-paper-scissors" src="./img/scissors.png" /></button>
-        <button onClick={() => play("rock")}><img className="rock-paper-scissors" src="./img/rock.png" /></button>
-        <button onClick={() => play("paper")}><img className="rock-paper-scissors" src="./img/paper.png" /></button>
+        <button onClick={() => play("scissors")}><img className="rock-paper-scissors" ait=" " src="./img/scissors.png" /></button>
+        <button onClick={() => play("rock")}><img className="rock-paper-scissors" ait=" " src="./img/rock.png" /></button>
+        <button onClick={() => play("paper")}><img className="rock-paper-scissors"ait=" " src="./img/paper.png" /></button>
       </div>
     </div>
 
