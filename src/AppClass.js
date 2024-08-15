@@ -46,15 +46,8 @@ export default class AppClass extends Component {
       yourScore: result === "Win" ? prevState.yourScore + 1 : prevState.yourScore,
       computerScore: result === "Lose" ? prevState.computerScore + 1 : prevState.computerScore,
     }));
-   
-
-    
-    
   };
 
- 
-  
-  
 
   judgement = (user, computer) => {
     if (user.name === computer.name) {
@@ -97,7 +90,7 @@ export default class AppClass extends Component {
             <div><h1>{yourScore}</h1></div>
 
             <div className="title-img">
-              <img className="cursor-pointer reset-img" alt=" " src="./img/color-rock-paper-scissors.png" onClick={() => this.reset()} /><span onClick={() => this.reset()}>Reset</span>
+              <img className="cursor-pointer reset-img" alt="" src="./img/color-rock-paper-scissors.png" onClick={() => this.reset()} /><span onClick={() => this.reset()}>Reset</span>
             </div>
             <div><h1>{computerScore}</h1></div>
 
@@ -112,9 +105,9 @@ export default class AppClass extends Component {
         <div className="main main2">
           {/* 3. 버튼을 클릭하면 클릭한 값이 박스에 보임, 무엇을 선택했는지 알게하는 매개변수를 {play()} 에다 넣어준다.  play 함수에다 (userChoice)라는 매개변수이름을 준다. */}
           {/* play("매개변수") 하면 함수를 그냥 실행시켜버린답니다. 그래서 콜백함수를 줘야한다. 어떻게?  { () => play("scissors") 이렇케 해준다.*/}
-          <button className="cursor-pointer rps-a" onClick={() => this.play("scissors")}><img className="rock-paper-scissors" alt=" " src="./img/scissors.png" /></button>
-          <button className="cursor-pointer rps-b" onClick={() => this.play("rock")}><img className="rock-paper-scissors" alt=" " src="./img/rock.png" /></button>
-          <button className="cursor-pointer rps-c" onClick={() => this.play("paper")}><img className="rock-paper-scissors" alt=" " src="./img/paper.png" /></button>
+          <button className="cursor-pointer rps-a" onClick={() => this.play("scissors")}><img className="rock-paper-scissors" alt="" src="./img/scissors.png" /></button>
+          <button className="cursor-pointer rps-b" onClick={() => this.play("rock")}><img className="rock-paper-scissors" alt="" src="./img/rock.png" /></button>
+          <button className="cursor-pointer rps-c" onClick={() => this.play("paper")}><img className="rock-paper-scissors" alt="" src="./img/paper.png" /></button>
         </div>
         <div className='main text-total'>Total Game : {totalCount}</div>
       </div>

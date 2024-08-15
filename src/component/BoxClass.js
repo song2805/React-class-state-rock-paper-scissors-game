@@ -23,7 +23,7 @@ export default class BoxClass extends Component {
 
       <div className={`box ${this.result}`}>
         <h1 className="word">{this.props.title}</h1>
-        <img className="item-img" ait=" " src={this.props.item && this.props.item.img} />
+        <img className="item-img" alt="" src={this.props.item && this.props.item.img} />
         <h2>{this.result}</h2>
       </div>
     );
